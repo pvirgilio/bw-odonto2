@@ -1,0 +1,48 @@
+.oral__problems {
+  margin-top: 5rem;
+}
+
+.container__oral__problems {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+}
+
+.bw__dentista1 {
+  width: 400px;
+  border-radius: 25px 0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text__oral__problems {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text__oral__problems h2 {
+  font-size: 2rem;
+  line-height: 40px;
+  font-family: var(--font--primaria);
+}
+.text__oral__problems p {
+  width: 80%;
+}
+
+.text__two__problem {
+  border-left: 5px solid var(--cor--texto--principal);
+  padding-left: 1rem;
+}
+
+.link__oral__problem {
+  text-decoration: none;
+  background-color: var(--cor--texto--secundaria);
+  color: white;
+  width: fit-content;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}

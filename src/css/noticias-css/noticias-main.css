@@ -1,0 +1,8 @@
+@import url(./noticias.css);
+@import url(card__noticia.css);
+@import url(noticia__aside.css);
+
+* {
+    list-style: none;
+
+}

@@ -1,0 +1,135 @@
+footer {
+  background-color: #1d2b4f;
+  font-family: var(--font--secundaria);
+  padding: 2rem;
+  color: var(--cor--cinza--medio);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__informacoes--container,
+.foooter__explorar--container,
+.footer__links--container,
+.footer__newsletter--container,
+.newsletter__email--container {
+  width: 30%;
+}
+
+.bw--span {
+  text-transform: uppercase;
+}
+
+.footer__informacoes--titulo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.informacoes__endereco--container {
+  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.informacoes__endereco {
+  margin: 1rem 0;
+}
+
+.footer__informacoes--redes {
+  padding: 2rem 0;
+}
+
+.informacoes__redes--lista {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.informacoes__redes--item {
+}
+
+.informacoes__redes--link {
+  color: var(--cor--branco);
+  background-color: var(--cor--azul--claro);
+  width: 45px;
+  height: 45px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.foooter__explorar--container {
+  text-align: center;
+}
+
+.foooter__explorar--titulo,
+.footer__links--titulo,
+.footer__newsletter--titulo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: var(--cor--branco);
+  font-family: var(--font--primaria);
+}
+
+.foooter__explorar--lista,
+.footer__links--lista,
+.footer__newsletter--texto {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.foooter__explorar--link,
+.footer__links--link {
+  text-decoration: none;
+  color: var(--cor--cinza--medio);
+}
+
+.foooter__explorar--link:hover,
+.footer__links--link:hover {
+  color: var(--cor--branco);
+}
+
+.footer__newsletter--texto {
+  margin-bottom: 2rem;
+}
+
+.newsletter__email--container {
+  display: flex;
+}
+
+.newsletter__email--input {
+  padding: 0.5rem;
+  width: 250px;
+  /* border-radius: 5px; */
+  border: none;
+  /* position: relative; */
+}
+
+.newsletter__email--submit {
+  background-color: var(--cor--azul--claro);
+  border: none;
+  color: var(--cor--branco);
+  padding: 0 1rem;
+  /* border-radius: 5px; */
+}
+
+.footer__linha {
+  width: 100%;
+  color: var(--cor--branco);
+  background-color: var(--cor--branco);
+  height: 1px;
+}
+
+.footer__copy {
+  text-align: center;
+  margin-top: 2rem;
+}

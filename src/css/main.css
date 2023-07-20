@@ -1,0 +1,41 @@
+/* Css Principal */
+
+@import url(./footer/footer.css);
+@import url(./home/header/header.css);
+@import url("https://fonts.cdnfonts.com/css/poppins");
+@import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://fonts.cdnfonts.com/css/merriweather");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font--secundaria);
+}
+
+/* Variáveis de cores/fontes */
+
+:root {
+  /* Cores dos textos: #FE8B0C, #002E7D e branco. */
+
+  --font--primaria: "Poppins", sans-serif;
+  --font--secundaria: "Montserrat", sans-serif;
+  --font--terciaria: "Merriweather", sans-serif;
+  --cor--principal: #fe8b0c;
+  --var--principal: #974e00;
+  --cor--secundaria: #002e7d;
+  --var--secundaria: #001b49;
+  --cor--texto--principal: #fe8b0c;
+  --cor--texto--secundaria: #002e7d;
+  --cor--branco: #ffffff;
+  --cor--azul: #87dbff;
+  --cor--azul--claro: #00b3cc;
+  --cor--azul--escuro: #1d2b4f;
+  --cor--azul--cinza: #505f95;
+  --cor--cinza: #444444;
+  --cor--cinza--claro: #ada9a9;
+  --cor--cinza--medio: #7e869b;
+  --text--header: black;
+  --hover--tags: #007080;
+}
