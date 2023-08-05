@@ -1,0 +1,34 @@
+.container-cards-dentistas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dentistas-about {
+  padding: 5rem 0;
+}
+
+.card-dentista-about {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.container-imgcard-about {
+  background-color: var(--cor--secundaria);
+}
+
+.imgcard-about {
+  width: 100%;
+  height: 400px;
+}
+
+.container-text-card-about {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1rem 2rem;
+}

@@ -1,0 +1,73 @@
+.avaliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  color: white;
+  margin-top: 3rem;
+  padding: 10rem 8rem;
+  background-color: var(--cor--secundaria);
+}
+
+.number__avaliation {
+  display: flex;
+  align-items: center;
+  flex: 0 0 50%;
+
+  padding: 10px 0;
+}
+
+.number__avaliation svg {
+  width: 60px;
+  height: auto;
+  stroke: var(--cor--principal);
+}
+
+.text__number__avaliation span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.container__numbers__avaliations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.avaliation__people {
+  width: 500px;
+  background-color: var(--var--secundaria);
+  padding: 2rem 2rem;
+  border-radius: 10px;
+}
+
+.img__dentista__ava {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.avaliation__people {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text__avaliation__people {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .avaliations {
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 8rem 1.3rem;
+    gap: 40px;
+  }
+
+  .number__avaliation {
+    justify-content: center;
+  }
+}

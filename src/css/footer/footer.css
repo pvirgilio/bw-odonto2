@@ -23,8 +23,9 @@ footer {
 }
 
 .footer__informacoes--titulo {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
+  color: white;
 }
 
 .informacoes__endereco--container {
@@ -45,6 +46,7 @@ footer {
   display: flex;
   justify-content: left;
   gap: 2rem;
+  list-style: none;
   font-size: 2rem;
 }
 
@@ -53,7 +55,7 @@ footer {
 
 .informacoes__redes--link {
   color: var(--cor--branco);
-  background-color: var(--cor--azul--claro);
+  background-color: var(--cor--principal);
   width: 45px;
   height: 45px;
   padding: 0.2rem 0.5rem;
@@ -115,7 +117,7 @@ footer {
 }
 
 .newsletter__email--submit {
-  background-color: var(--cor--azul--claro);
+  background-color: var(--cor--principal);
   border: none;
   color: var(--cor--branco);
   padding: 0 1rem;
@@ -132,4 +134,48 @@ footer {
 .footer__copy {
   text-align: center;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__newsletter--container {
+    width: 80%;
+  }
+
+  .footer__informacoes--container,
+  .footer__links--container,
+  .foooter__explorar--container,
+  .footer__newsletter--container {
+    width: 45%;
+  }
+
+  .foooter__explorar--container {
+    text-align: left;
+  }
+
+  .footer__container {
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .footer__linha {
+    margin: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .informacoes__redes--lista {
+    flex-wrap: wrap;
+  }
+
+  .footer__informacoes--container,
+  .footer__links--container,
+  .foooter__explorar--container,
+  .footer__newsletter--container {
+    width: 100%;
+  }
+
+  .newsletter__email--input {
+    width: 205px;
+  }
 }

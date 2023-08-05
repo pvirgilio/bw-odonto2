@@ -1,0 +1,48 @@
+.statistics-bw {
+  display: flex;
+  background-color: var(--cor--principal);
+  padding: 8rem 8rem 0 8rem;
+  justify-content: center;
+  gap: 50px;
+  color: white;
+}
+
+.img-statistics {
+  height: 500px;
+}
+
+.text-statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.info-text-statistics {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 0 40%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .statistics-bw {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .statistics-bw {
+    flex-direction: column;
+    padding: 5rem 2rem;
+  }
+
+  .img-statistic {
+    width: 100%;
+    height: 100%;
+  }
+}

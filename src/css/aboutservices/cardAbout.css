@@ -1,0 +1,40 @@
+.card__about {
+  width: 100%;
+  position: relative;
+}
+.img-card__about {
+  width: 100%;
+  min-height: 300px;
+  background: url("/img/aboutservices-IMG/aboutcard.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(80%);
+}
+
+.text-card__about {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.text-card__about h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .text-card__about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-card__about h1 {
+    font-size: 3rem;
+    color: white;
+    white-space: nowrap;
+  }
+}

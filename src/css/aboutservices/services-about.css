@@ -1,0 +1,150 @@
+.container-cards-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 0 8rem;
+}
+
+.card-services {
+  width: 250px;
+  margin: 0 1rem !important;
+}
+
+.icon-card-services {
+  position: absolute;
+  background-color: blue;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  top: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-services {
+  background-color: var(--cor--secundaria);
+  padding: 3rem 8rem;
+  color: white;
+}
+
+.title-services h2 {
+  font-size: 2rem;
+}
+
+.container-img-services-about {
+  width: 100%;
+  background: url(/img/Cuida-saude-bucal.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.text-card-services {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slick-next {
+  position: absolute;
+  right: 80px;
+  top: 30%;
+  cursor: pointer;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>')
+    no-repeat center center;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  position: absolute;
+  left: 80px;
+  top: 30%;
+  cursor: pointer;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>')
+    no-repeat center center;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-next,
+.slick-prev {
+  border: none !important;
+  outline: none !important;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  list-style: none;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px; /* Largura das dots */
+  height: 20px; /* Altura das dots */
+  margin: 0 5px;
+  padding: 0;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px; /* Largura das dots */
+  height: 20px; /* Altura das dots */
+  padding: 5px; /* Espaçamento interno das dots */
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px; /* Largura do ponto interno da dot */
+  height: 8px; /* Altura do ponto interno da dot */
+  background-color: #333; /* Cor do ponto interno da dot */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0.25; /* Transparência do ponto interno da dot */
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75; /* Transparência do ponto interno da dot ativa */
+}
+@media (max-width: 600px) {
+  .container-cards-services {
+    padding: 0 1.3rem;
+  }
+  .slick-next {
+    visibility: hidden;
+  }
+  .slick-prev {
+    visibility: hidden;
+  }
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+  .container-cards-services {
+    padding: 0 2rem;
+  }
+  .slick-next {
+    right: 0;
+    top: 30%;
+  }
+
+  .slick-prev {
+    left: 0;
+    top: 30%;
+  }
+}

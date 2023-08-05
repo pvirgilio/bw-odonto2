@@ -1,0 +1,140 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.logo__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.text__logo {
+  color: var(--cor--texto--secundaria);
+  font-weight: 400;
+  font-family: var(--font--primaria);
+  white-space: nowrap;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bw__text {
+  font-weight: bold;
+}
+
+.logo__bw {
+  width: 40px;
+}
+
+.container__menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.container__menu li a {
+  text-decoration: none;
+  color: var(--text--header);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.contato__btn__header {
+  background-color: var(--cor--principal);
+  padding: 1.5rem 2rem;
+}
+
+.contato__btn__header a {
+  text-decoration: none;
+  color: white;
+}
+
+.container-btn-menu {
+  display: none;
+}
+
+.container-closeBtn {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 1rem 1.3rem;
+    position: relative;
+  }
+  .container__menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    right: 0;
+    width: 250px;
+
+    height: 100%;
+
+    text-align: right;
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .container-closeBtn {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+
+  .container-btn-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .contato__btn__header {
+    display: none;
+  }
+
+  .active-menu {
+    display: flex;
+    overflow: hidden;
+    animation: menuactive 0.2s ease-in;
+  }
+
+  .close-menu {
+    display: none;
+    overflow: hidden;
+    animation: menuclose 0.2s ease-out;
+  }
+
+  @keyframes menuactive {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 250px;
+    }
+  }
+  @keyframes menuclose {
+    0% {
+      width: 250px;
+    }
+
+    100% {
+      width: 0;
+    }
+  }
+}

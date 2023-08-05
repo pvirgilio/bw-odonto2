@@ -1,0 +1,49 @@
+.dentistas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 5rem;
+}
+
+.card__dentista1,
+.card__dentista2 {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img__dentista1,
+.img__dentista2 {
+  width: 100%;
+  height: 500px;
+  border-radius: 25px 25px 0 0;
+}
+
+.container__img__dentista1,
+.container__img__dentista2 {
+  background-color: var(--cor--principal);
+  display: flex;
+  align-items: end;
+}
+
+.container__text__dentista1,
+.container__text__dentista2 {
+  border: 1px solid var(--cor--principal);
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .dentistas {
+    padding: 0 1.3rem;
+    margin: 5rem 0;
+  }
+
+  .container__text__dentista1,
+  .container__text__dentista2 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+.localization__bw {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.info__localization {
+  background-color: var(--cor--secundaria);
+  color: white;
+  width: 300px;
+  padding: 1.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: absolute;
+  left: 15%;
+}
+
+.text__localization {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hours__bw {
+  display: flex;
+  justify-content: space-around;
+}
+.hours__bw span,
+.hours__bw p {
+  white-space: nowrap;
+}
+
+.localization__bw iframe {
+  width: 100%;
+}
+
+.contact__localization {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text__contact__details {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}

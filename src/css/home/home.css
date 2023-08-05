@@ -1,10 +1,44 @@
-@import url(/src/css/main.css);
-@import url(./header/header.css);
-@import url(./bw-card/bw-card.css);
-@import url(./card-oral-problems/oral-problems.css);
-@import url(./oque-fazemos/oque-fazemos.css);
-@import url(./equipe-bw/equipebw.css);
-@import url(./dentistas/dentistas.css);
-@import url(./avaliations/avaliations.css);
-@import url(./news/news.css);
-@import url(./localization/localization.css);
+@import url(./bw-card.css);
+@import url(./oral-problems.css);
+@import url(./oque-fazemos.css);
+@import url(./equipebw.css);
+@import url(./dentistas.css);
+@import url(./avaliations.css);
+@import url(./news.css);
+@import url(./localization.css);
+
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#tooth {
+  animation: pulse 2s infinite;
+}

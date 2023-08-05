@@ -1,0 +1,34 @@
+.our-process {
+  background-color: var(--cor--principal);
+  color: white;
+  padding: 8rem 8rem;
+  margin-top: 5rem;
+}
+
+.title-our-process {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.minibar-ourprocess {
+  height: 4px;
+  background-color: white;
+  width: 15%;
+}
+
+.container-cards-ourprocess {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 2rem;
+}
+
+.card-ourprocess {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
