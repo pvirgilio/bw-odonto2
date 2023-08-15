@@ -1,0 +1,8 @@
+@import url(../noticias-postagem/postagem__banner.css);
+@import url(../noticias-css/noticia__aside.css);
+@import url(../noticias-postagem/postagem__conteudo.css);
+@import url(../noticias-postagem/postagem__comentarios.css);
+
+*{
+    list-style: none;
+}

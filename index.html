@@ -9,9 +9,12 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
+    <link rel="stylesheet" href="/src/css/header/scrollRevealHeader.css" />
+    <link rel="shortcut icon" href="./img/odontoLogo.png" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <title>Responsive Carousel</title>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <title>Bw Odonto</title>
   </head>
 
@@ -80,10 +83,10 @@
               alt="Imagem de um dentista em ação"
             />
             <article class="text__oral__problems">
-              <h2 id="titleOralproblems">
+              <h2 class="titleOralproblems" id="titleOralproblems">
                 Solucionando problemas bucais comuns
               </h2>
-              <p id="paragOral">
+              <p class="text__one__problem" id="paragOral">
                 De cáries a doenças da gengiva, nossos especialistas estão
                 equipados para tratar uma ampla gama de problemas bucais,
                 garantindo que você possa voltar a sorrir com confiança.
@@ -104,93 +107,84 @@
         <section class="oque__fazemos">
           <h2 class="title__oque__fazemos">O que fazemos</h2>
           <p class="text__oque__fazemos">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            molestias explicabo nulla, officiis amet modi fugiat dolorem
-            laudantium soluta sapiente!
+            Na área da odontologia, nos dedicamos a promover a saúde e o
+            bem-estar bucal. Oferecemos diversos tratamentos, desde a prevenção
+            até procedimentos mais complexos. Confira abaixo nossos principais
+            serviços!
           </p>
           <div class="container__cards__oque__fazemos">
             <div class="card_oque_fazemos">
               <img
                 class="img__card__oque__fazemos"
                 src="./img/odontoLogo.png"
-                alt=""
+                alt="Tratamento de Cáries"
               />
-              <h3 class="title__card__oque">
-                Lorem ipsum, dolor sit amet consectetur adipisicing.
-              </h3>
+              <h3 class="title__card__oque">Tratamento de Cáries</h3>
               <p class="text__card__oques">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                odio facilis sint totam optio vel eaque perferendis nemo tenetur
+                Eliminamos as cáries e restauramos os dentes afetados,
+                prevenindo futuros problemas e mantendo um sorriso saudável.
               </p>
             </div>
             <div class="card_oque_fazemos">
               <img
                 class="img__card__oque__fazemos"
                 src="./img/odontoLogo.png"
-                alt=""
+                alt="Clareamento Dental"
               />
-              <h3 class="title__card__oque">
-                Lorem ipsum, dolor sit amet consectetur adipisicing.
-              </h3>
+              <h3 class="title__card__oque">Clareamento Dental</h3>
               <p class="text__card__oques">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                odio facilis sint totam optio vel eaque perferendis nemo tenetur
+                Oferecemos tratamentos de clareamento dental personalizados para
+                alcançar um sorriso mais branco e brilhante.
               </p>
             </div>
             <div class="card_oque_fazemos">
               <img
                 class="img__card__oque__fazemos"
                 src="./img/odontoLogo.png"
-                alt=""
+                alt="Ortodontia"
               />
-              <h3 class="title__card__oque">
-                Lorem ipsum, dolor sit amet consectetur adipisicing.
-              </h3>
+              <h3 class="title__card__oque">Ortodontia</h3>
               <p class="text__card__oques">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                odio facilis sint totam optio vel eaque perferendis nemo tenetur
+                Corrigimos o alinhamento dos dentes e a oclusão dentária,
+                melhorando a aparência e a funcionalidade da boca.
               </p>
             </div>
             <div class="card_oque_fazemos">
               <img
                 class="img__card__oque__fazemos"
                 src="./img/odontoLogo.png"
-                alt=""
+                alt="Implantes Dentários"
               />
-              <h3 class="title__card__oque">
-                Lorem ipsum, dolor sit amet consectetur adipisicing.
-              </h3>
+              <h3 class="title__card__oque">Implantes Dentários</h3>
               <p class="text__card__oques">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                odio facilis sint totam optio vel eaque perferendis nemo tenetur
+                Realizamos implantes dentários com técnicas modernas,
+                substituindo dentes perdidos e restaurando a estética e a
+                função.
               </p>
             </div>
             <div class="card_oque_fazemos">
               <img
                 class="img__card__oque__fazemos"
                 src="./img/odontoLogo.png"
-                alt=""
+                alt="Prevenção e Limpeza"
               />
-              <h3 class="title__card__oque">
-                Lorem ipsum, dolor sit amet consectetur adipisicing.
-              </h3>
+              <h3 class="title__card__oque">Prevenção e Limpeza</h3>
               <p class="text__card__oques">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                odio facilis sint totam optio vel eaque perferendis nemo tenetur
+                Oferecemos serviços de prevenção e limpeza profissional para
+                manter a saúde bucal em dia e prevenir problemas futuros.
               </p>
             </div>
             <div class="card_oque_fazemos">
               <img
                 class="img__card__oque__fazemos"
                 src="./img/odontoLogo.png"
-                alt=""
+                alt="Tratamento de Gengivas"
               />
-              <h3 class="title__card__oque">
-                Lorem ipsum, dolor sit amet consectetur adipisicing.
-              </h3>
+              <h3 class="title__card__oque">Tratamento de Gengivas</h3>
               <p class="text__card__oques">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                odio facilis sint totam optio vel eaque perferendis nemo tenetur
+                Tratamos diversas condições gengivais, desde gengivite até
+                doenças periodontais mais avançadas, com foco na recuperação da
+                saúde gengival.
               </p>
             </div>
           </div>
@@ -202,7 +196,7 @@
           <h2 class="title__equipe__bw">Conheça nossa equipe</h2>
           <article class="card__equipe__bw">
             <article class="container__text__equipe__bw">
-              <div class="text__equipe__bw">
+              <article class="text__equipe__bw">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -216,7 +210,7 @@
                   />
                 </svg>
                 <p>Atendimento personalizado e acolhedor</p>
-              </div>
+              </article>
               <article class="text__equipe__bw">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +249,7 @@
           </article>
         </section>
 
-        <section class="dentistas">
+        <!-- <section class="dentistas">
           <article class="card__dentista1">
             <article class="container__img__dentista1">
               <img class="img__dentista1" src="./img/dentista1.png" alt="" />
@@ -283,6 +277,59 @@
               </p>
             </article>
           </article>
+        </section> -->
+
+        <section class="plans">
+          <div class="container-title-plans">
+            <h1 class="title-plans">Nossos planos</h1>
+            <p class="text-plans">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+              soluta, minima ipsa alias exercitationem vero magnam tempore
+              deserunt illum ex accusamus expedita ea cumque excepturi, maiores
+              porro distinctio velit eaque.
+            </p>
+          </div>
+          <section class="container-cards-plans">
+            <div class="cards-plans">
+              <!-- Placeholder icon for Basic Plan -->
+              <h2 class="title-card-plans">Bw Odonto</h2>
+              <span class="type-plans">Básico</span>
+              <div class="container-price-plan">
+                <span class="price-title">A partir de:</span>
+                <h3 class="price-plan">R$ <span>100,00</span> /mês</h3>
+              </div>
+              <div class="line-plans"></div>
+              <p>Atendimento básico.</p>
+              <p>Consultas preventivas incluídas.</p>
+              <button class="button-plans">Quero Contratar</button>
+            </div>
+            <div class="cards-plans">
+              <!-- Placeholder icon for Starter Plan -->
+              <h2 class="title-card-plans">Bw Odonto</h2>
+              <span class="type-plans">Starter</span>
+              <div class="container-price-plan">
+                <span class="price-title">A partir de:</span>
+                <h3 class="price-plan">R$ <span>200,00</span> /mês</h3>
+              </div>
+              <div class="line-plans"></div>
+              <p>Atendimento estendido.</p>
+              <p>Ortodontia com desconto.</p>
+              <button class="button-plans">Quero Contratar</button>
+            </div>
+            <div class="cards-plans">
+              <!-- Placeholder icon for Premium Plan -->
+              <h2 class="title-card-plans">Bw Odonto</h2>
+              <span class="type-plans">Premium</span>
+              <div class="container-price-plan">
+                <span class="price-title">A partir de:</span>
+                <h3 class="price-plan">R$ <span>300,00</span> /mês</h3>
+              </div>
+              <div class="line-plans"></div>
+              <p>Atendimento VIP.</p>
+              <p>Procedimentos estéticos incluídos.</p>
+              <button class="button-plans">Quero Contratar</button>
+            </div>
+          </section>
         </section>
 
         <section class="avaliations">
@@ -307,7 +354,7 @@
                 <path d="M12 5.5l1 2.5l-2 2l2 2" />
               </svg>
               <article class="text__number__avaliation">
-                <span>+67</span>
+                <span class="contador">0</span>
                 <p>dentista</p>
               </article>
             </article>
@@ -331,7 +378,7 @@
                 <path d="M12 5.5l1 2.5l-2 2l2 2" />
               </svg>
               <article class="text__number__avaliation">
-                <span>+67</span>
+                <span class="contador">0</span>
                 <p>dentista</p>
               </article>
             </article>
@@ -355,7 +402,7 @@
                 <path d="M12 5.5l1 2.5l-2 2l2 2" />
               </svg>
               <article class="text__number__avaliation">
-                <span>+67</span>
+                <span class="contador">0</span>
                 <p>dentista</p>
               </article>
             </article>
@@ -379,7 +426,7 @@
                 <path d="M12 5.5l1 2.5l-2 2l2 2" />
               </svg>
               <article class="text__number__avaliation">
-                <span>+67</span>
+                <span class="contador">0</span>
                 <p>dentista</p>
               </article>
             </article>
@@ -387,13 +434,18 @@
 
           <article class="avaliation__people">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              repudiandae, modi atque officia dolorum laboriosam quo quis sit
-              eaque aut nobis recusandae nihil placeat nostrum, deserunt,
-              aliquam tenetur explicabo fugit!
+              Como um dentista renomado com anos de experiência, fiquei
+              profundamente impressionado com a Clínica XYZ. Sua abordagem
+              inovadora, uso de tecnologia de ponta e equipe dedicada refletem o
+              que há de melhor na odontologia moderna. É um prazer endossar este
+              estabelecimento.
             </p>
             <article class="text__avaliation__people">
-              <img class="img__dentista__ava" src="" alt="" />
+              <img
+                class="img__dentista__ava"
+                src="https://www.smilecursos.com.br/wp-content/uploads/2017/12/post14.jpg"
+                alt=""
+              />
               <article class="people__avaliation">
                 <h4>Dentista</h4>
                 <h2>Tromani Helix</h2>
@@ -478,5 +530,7 @@
     <script src="./src/js/importMenuFooter.js"></script>
     <script src="/src/js/preloader.js"></script>
     <script src="/src/js/carousel.js"></script>
+    <script src="./src/js/contagem.js"></script>
+    <script src="/src/js/scrollreveal.js"></script>
   </body>
 </html>

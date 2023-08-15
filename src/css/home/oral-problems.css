@@ -2,6 +2,13 @@
   margin-top: 5rem;
 }
 
+.titleOralproblems,
+.text__one__problem,
+.text__two__problem,
+.link__oral__problem {
+  visibility: hidden;
+}
+
 .container__oral__problems {
   display: flex;
   justify-content: center;

@@ -1,5 +1,12 @@
 .bw__card {
   position: relative;
+  visibility: hidden;
+}
+
+.subtitulo__bw__card,
+.title__bw__odonto,
+.text__bw__card {
+  visibility: hidden;
 }
 
 .card__odonto {

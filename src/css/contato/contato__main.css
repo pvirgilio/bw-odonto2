@@ -1,0 +1,6 @@
+@import url("banner__contato.css");
+@import url("contato__formulario.css");
+
+* {
+    list-style: none;
+}

@@ -1,0 +1,38 @@
+.banner__contato--container {
+    background-image: url(/img/noticia--card.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    color: var(--cor--branco);
+} 
+
+.banner__contato--container::before {
+    content: "";    
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5f5c65a6;
+}
+
+
+.banner__contato--conteudo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 20%; */
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner__contato--titulo {
+    position: absolute;
+    text-align: center;
+    font-size: 2.9rem;
+}

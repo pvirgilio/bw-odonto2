@@ -136,6 +136,26 @@ footer {
   margin-top: 2rem;
 }
 
+.facebook {
+  background-color: #1877f2;
+}
+
+.instagram {
+  background-color: #505f95;
+}
+
+.email {
+  background-color: #ff0000;
+}
+
+.whatsapp {
+  background-color: #09cc34;
+}
+
+.informacoes__redes--item:hover {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 1023px) {
   .footer__newsletter--container {
     width: 80%;

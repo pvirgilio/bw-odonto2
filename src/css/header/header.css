@@ -70,6 +70,7 @@ header {
   header {
     padding: 1rem 1.3rem;
     position: relative;
+    z-index: 999;
   }
   .container__menu {
     display: none;

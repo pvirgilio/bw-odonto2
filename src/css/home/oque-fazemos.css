@@ -4,7 +4,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 10rem;
-  padding: 0 8rem;
+  padding: 5rem 8rem;
+}
+
+.title__oque__fazemos,
+.text__oque__fazemos,
+.card_oque_fazemos {
+  visibility: hidden;
 }
 
 .title__oque__fazemos {

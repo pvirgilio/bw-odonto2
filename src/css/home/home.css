@@ -6,6 +6,7 @@
 @import url(./avaliations.css);
 @import url(./news.css);
 @import url(./localization.css);
+@import url(./plans.css);
 
 #preloader {
   position: fixed;

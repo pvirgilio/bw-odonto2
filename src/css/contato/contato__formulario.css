@@ -1,0 +1,274 @@
+.formulario__contato--container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 4rem 5rem;
+  gap: 20px;
+}
+
+.formulario__contato {
+  color: var(--cor--azul--escuro);
+  width: 50%;
+  padding-right: 2rem;
+}
+
+.contato__info--container {
+  width: 50%;
+}
+
+.formulario__contato--titulo {
+  font-size: 3.2rem;
+  color: var(--cor--azul--escuro);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.formulario__campo {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.campo__label {
+  font-size: 1.1rem;
+  color: var(--cor--azul--cinza);
+}
+
+.campo__input {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+
+#mensagem {
+  resize: vertical;
+}
+.campo__input:focus {
+  border: 1px solid var(--cor--azul--medio);
+}
+
+.formulario__submit {
+  background-color: var(--cor--azul--medio);
+  border: none;
+  color: var(--cor--branco);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.formulario__submit:hover {
+  background-color: var(--cor--azul--escuro);
+}
+
+.contato__info--container {
+  background-image: url("/img/img-contato.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 3rem;
+  border-radius: 45px 0;
+  color: var(--cor--azul--cinza--medio);
+  justify-content: center;
+  align-items: center;
+}
+
+.contato__info--container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 25, 85, 0.795);
+  border-radius: 45px 0;
+}
+
+.contato__info,
+.endereco__info--container,
+.sociais__info--container {
+  z-index: 1;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.info__horario--titulo,
+.endereco__info--titulo {
+  color: var(--cor--branco);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.info__horario--item {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.info__horario--dia,
+.info__horario--horas {
+  width: 50%;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.endereco__info--conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.endereco__info--conteudo span i {
+  color: var(--cor--verde);
+  /* padding-right: 1rem; */
+  font-size: 1.3rem;
+}
+
+.endereco__info--conteudo span {
+  font-size: 1.2rem;
+}
+
+.endereco__info--email,
+.endereco__info--telefone,
+.endereco__info--endereco {
+  display: flex;
+  gap: 1rem;
+}
+
+.sociais__info--container {
+  margin-top: 3rem;
+}
+
+.sociais__info--lista {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sociais__info--item a:hover {
+  transform: translateY(-5px);
+}
+
+.sociais__info--item a {
+  text-decoration: none;
+}
+
+.sociais__info--item a i {
+  font-size: 1.3rem;
+  color: var(--cor--branco);
+  text-align: center;
+  width: 22px;
+  height: 22px;
+}
+
+.sociais__info--link {
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.facebook {
+  background-color: #1877f2;
+}
+.pinterest {
+  background-color: #bd081c;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.linkedin {
+  background-color: #0a66c2;
+}
+.youtube {
+  background-color: #ff0000;
+}
+.instagram {
+  background-color: #505f95;
+}
+
+@media screen and (max-width: 1260px) {
+  .info__horario--item {
+    gap: 2rem;
+  }
+
+  .endereco__info--conteudo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .formulario__contato--container {
+    padding: 2rem;
+  }
+
+  .contato__info,
+  .endereco__info--container,
+  .info__horario--item,
+  .sociais__info--lista {
+    width: 100%;
+  }
+
+  .sociais__info--container {
+    align-self: flex-start;
+  }
+
+  .sociais__info--lista {
+    flex-wrap: wrap;
+    gap: 1.19rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .formulario__contato--container {
+    padding: 2rem 1.3rem;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .formulario__contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .formulario__contato--titulo {
+    font-size: 2rem;
+  }
+
+  .campo__input {
+    width: 100%;
+  }
+
+  .formulario__contato--titulo {
+    white-space: nowrap;
+  }
+
+  .contato__info--container {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 4rem 0;
+  }
+
+  .contato__info,
+  .endereco__info--container,
+  .sociais__info--container {
+    width: 90%;
+  }
+}

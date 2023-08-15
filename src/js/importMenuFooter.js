@@ -3,10 +3,12 @@ function importMenuFooter() {
   const footerMain = document.querySelector("footer");
 
   headerMain.innerHTML = `
-  <div class="logo__header">
-    <img class="logo__bw" src="/img/odontoLogo.png" alt="" />
-    <h1 class="text__logo"><span class="bw__text">BW</span> odonto</h1>
-</div>
+  <a style="text-decoration: none;" href="/index.html">
+      <div class="logo__header">
+        <img class="logo__bw" src="/img/odontoLogo.png" alt="" />
+        <h1 class="text__logo"><span class="bw__text">BW</span> odonto</h1>
+      </div>
+  </a>
 <nav class="menu">
   <div onclick="menuHeader()" class="container-btn-menu">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">

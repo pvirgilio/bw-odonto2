@@ -6,20 +6,24 @@ function carousel() {
 
       data.response.slice(0, 5).forEach((el) => {
         carousel.innerHTML += `
-        <div class="card-services">
-            <img
-              class="img-card-services"
-              src="data:image/jpeg;base64,${el.file}"
-              alt=""
-            />
-            <div class="text-card-services">
-              <h4>Dentista</h4>
-              <h3>${el.titulo}</h3>
-              <p>
-                ${el.conteudo}
-              </p>
-            </div>
-        </div>
+        
+          <div class="card-services">
+            <a href="/pages/noticias-postagem.html?id=${el.id}&page=0">
+              <img
+                class="img-card-services"
+                src="data:image/jpeg;base64,${el.file}"
+                alt=""
+              />
+              <div class="text-card-services">
+                <h4>Dentista</h4>
+                <h3>${el.titulo}</h3>
+                <p>
+                  ${el.conteudo}
+                </p>
+              </div>
+              </a>
+          </div>
+        
 
         `;
       });

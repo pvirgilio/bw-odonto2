@@ -34,11 +34,16 @@
   --cor--branco: #ffffff;
   --cor--azul: #87dbff;
   --cor--azul--claro: #00b3cc;
+  --cor--azul--medio: #0e63f4;
   --cor--azul--escuro: #1d2b4f;
   --cor--azul--cinza: #505f95;
+  --cor--azul--cinza--medio: #8e99b7;
   --cor--cinza: #444444;
   --cor--cinza--claro: #ada9a9;
   --cor--cinza--medio: #7e869b;
   --text--header: black;
   --hover--tags: #007080;
+  --hover--tags: #007080;
+  --cor--verde: #00bba0;
+  --cor--vermelho: rgb(248, 7, 7);
 }

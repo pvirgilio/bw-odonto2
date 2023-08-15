@@ -1,0 +1,225 @@
+.comentarios__container {
+  /* padding: 0 3rem; */
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.comentarios__quantidade {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--cor--azul--escuro);
+  display: block;
+  align-self: flex-start;
+  margin-top: 4rem;
+}
+
+.comentarios__article {
+  margin-top: 1rem;
+}
+
+.comentarios__article--cards {
+  display: grid;
+  grid-template-columns: 70px auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "comentario--imagem comentario--nome ."
+    "comentario--imagem comentario--data ."
+    "comentario--imagem comentario--texto comentario--texto"
+    ". comentario--btn .";
+  gap: 1rem 2rem;
+  margin: 4rem 0;
+  color: var(--cor--azul--cinza);
+}
+
+.comentarios__article--img {
+  grid-area: comentario--imagem;
+  height: 66px;
+  border-radius: 5px;
+}
+
+.comentarios__article--nome {
+  grid-area: comentario--nome;
+  font-weight: 500;
+  color: var(--text--header);
+}
+
+.comentarios__article--data {
+  grid-area: comentario--data;
+  justify-self: flex-start;
+  color: var(--cor--cinza);
+  font-weight: 500;
+}
+
+.comentarios__article--comentario {
+  grid-area: comentario--texto;
+  line-height: 25px;
+}
+
+.comentarios__article--btn {
+  grid-area: comentario--btn;
+  color: var(--text--header);
+  padding-top: 0.3rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--text--header);
+  width: 70px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.comentarios__article--btn:hover {
+  color: var(--cor--azul--medio);
+  border-color: var(--cor--azul--medio);
+}
+
+.comentario__input--texto {
+  margin-top: 1rem;
+}
+
+.container__input {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+    "label--comentario . ."
+    "comentario--input comentario--input comentario--input"
+    "comentario--input comentario--input comentario--input"
+    "label-nome . label--email"
+    "nome--input . email--input"
+    "btn--submit . .";
+  border: none;
+  gap: 0.7rem;
+  margin: 2rem 0;
+}
+
+.container__input input {
+  padding: 0.3rem 0;
+  border: none;
+  border: 1px solid var(--cor--cinza--claro);
+  border-radius: 5px;
+}
+
+.container__label--comentario {
+  grid-area: label--comentario;
+}
+
+#text__comentario {
+  grid-area: comentario--input;
+  border: none;
+  border: 1px solid var(--cor--cinza--claro);
+  border-radius: 5px;
+  height: 200px;
+}
+
+.container__label--nome {
+  grid-area: label-nome;
+}
+
+#nome {
+  grid-area: nome--input;
+}
+
+.container__label--email {
+  grid-area: label--email;
+}
+
+#email {
+  grid-area: email--input;
+}
+
+#submit__comentario {
+  grid-area: btn--submit;
+  font-weight: 500;
+  font-size: 1.3rem;
+  background-color: var(--cor--azul--medio);
+  color: var(--cor--branco);
+  border: none;
+  padding: 1rem 0;
+  border-radius: 35px;
+  width: 250px;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+#submit__comentario:hover {
+  background-color: var(--cor--azul--escuro);
+  transition: 250ms;
+}
+
+.comentario__container--input {
+  /* padding: 0 5.5rem; */
+  width: 75%;
+  padding-bottom: 3rem;
+  margin: 0 auto;
+  color: var(--cor--azul--escuro);
+}
+
+.comentario__input--destaque {
+  color: var(--cor--vermelho);
+}
+
+.comentario__input--titulo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--cor--azul--escuro);
+}
+
+@media screen and (max-width: 1260px) {
+  #submit__comentario {
+    justify-self: center;
+  }
+
+  .comentarios__container,
+  .comentario__container--input {
+    width: 70%;
+    
+}
+
+
+}
+
+@media screen and (max-width: 1023px) {
+  .comentarios__container,
+  .comentario__container--input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container__input {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "label--comentario"
+      "comentario--input"
+      "comentario--input"
+      "label-nome"
+      "nome--input"
+      "label--email"
+      "email--input"
+      "btn--submit";
+  }
+
+  .comentarios__container,
+  .comentario__container--input {
+    /* padding: 0 2rem; */
+    margin-top: 4rem;
+    width: 70%;
+  }
+
+  .comentarios__article--cards {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "comentario--imagem comentario--nome"
+      "comentario--imagem comentario--data"
+      ". comentario--texto"
+      ". comentario--btn ";
+    gap: 0.5rem 2rem;
+    margin: 3rem 0;
+    color: var(--cor--azul--cinza);
+  }
+}

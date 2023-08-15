@@ -1,15 +1,15 @@
-.banner__noticia--container {
+.banner__postagem--container {
     background-image: url(/img/noticia--card.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     width: 100%;
+    background-attachment: fixed;
     height: 300px;
     position: relative;
     color: var(--cor--branco);
-} 
+}
 
-.banner__noticia--container::before {
+.banner__postagem--container::before {
     content: "";    
     position: absolute;
         top: 0;
@@ -18,7 +18,8 @@
         height: 100%;
         background-color: #5f5c65a6;
 }
-.banner__noticia--conteudo {
+
+.banner__postagem--conteudo {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -28,34 +29,18 @@
     height: 100%;
 }
 
-.noticia__subtitulo--destaque {
-    border-bottom: 3px solid var(--cor--branco);
-    padding-bottom: 1rem;
-    
-}
-
-.banner__noticia--subtitulo, 
-.banner__noticia--texto {
-    font-size: 1rem;
-}
-
-.banner__noticia--titulo {
-    font-size: 2.5rem;
-    margin: 2rem 0;
+.banner__postagem--titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 767px) {
-    .banner__noticia--titulo {
-        font-size: 2rem;
-    }
-
-    .banner__noticia--subtitulo {
+    .banner__postagem--titulo {
         font-size: 1rem;
     }
-
-    .banner__noticia--texto {
-        display: none;
+    
+    .banner__postagem--container {
+        width: 100vw;
     }
-
 
 }

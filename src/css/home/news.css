@@ -1,5 +1,5 @@
 .news__bw {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .carousel {
@@ -32,6 +32,11 @@
   margin: 0 1rem !important;
 
   overflow: hidden;
+}
+
+.card-services a {
+  text-decoration: none;
+  color: black;
 }
 
 .img-card-services {

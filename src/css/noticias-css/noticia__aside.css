@@ -138,3 +138,44 @@
     color: var(--cor--branco);
     text-decoration: none;
 }
+
+@media screen and (max-width: 1280px) {
+
+    .aside__container {
+        width: 300px;
+        justify-self: start;
+    }
+    
+    .post__card--img {
+        height: 125px;
+    }
+
+    .aside__filtro--select {
+        width: 250px;
+        padding: none;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .post__card--img {
+        height: 90px;
+        border-radius: 5px;
+    }
+
+    .post__card--titulo {
+        font-size: 1rem;
+    }
+
+    .aside__tags--item {
+        padding: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .aside__container {
+        width: 100%;
+        padding: 3rem 2rem 1rem 2rem;
+    }
+}
