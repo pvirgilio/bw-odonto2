@@ -65,10 +65,11 @@ function importMenuFooter() {
   <section class="foooter__explorar--container">
     <h3 class="foooter__explorar--titulo">Explorar</h3>
     <ul class="foooter__explorar--lista">
-      <li class="foooter__explorar--item"><a href="#" class="foooter__explorar--link">Home</a></li>
-      <li class="foooter__explorar--item"><a href="#" class="foooter__explorar--link">Sobre Nós</a></li>
-      <li class="foooter__explorar--item"><a href="#" class="foooter__explorar--link">Contate-nos</a></li>
-      <li class="foooter__explorar--item"><a href="#" class="foooter__explorar--link">Notícias</a></li>
+      <li class="foooter__explorar--item"><a href="/index.html" class="foooter__explorar--link">Home</a></li>
+      <li class="foooter__explorar--item"><a href="/pages/aboutservices.html" class="foooter__explorar--link">Sobre Nós</a></li>
+      <li class="foooter__explorar--item"><a href="/pages/contato.html" class="foooter__explorar--link">Contate-nos</a></li>
+      <li class="foooter__explorar--item"><a href="/pages/noticias.html" class="foooter__explorar--link">Notícias</a></li>
+      <li class="foooter__explorar--item"><a href="#" class="foooter__explorar--link">Login</a></li>
     </ul>
   </section>
   <section class="footer__links--container">

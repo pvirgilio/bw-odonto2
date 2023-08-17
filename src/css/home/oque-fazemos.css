@@ -42,7 +42,7 @@
 .card_oque_fazemos {
   width: 300px;
   gap: 30px;
-  flex: 1 0 30%;
+  flex: 1 0 25%;
   border: 1px solid #ccc;
   text-align: center;
   padding: 2rem 2rem;

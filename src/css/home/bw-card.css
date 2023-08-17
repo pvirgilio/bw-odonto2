@@ -17,6 +17,7 @@
   background-attachment: fixed;
   width: 100%;
   filter: brightness(40%);
+  object-fit: cover;
 }
 
 .subtitulo__bw__card {
@@ -94,6 +95,11 @@
 @media (max-width: 768px) {
   .bw__card {
     width: 100%;
+  }
+
+  .card__odonto {
+    width: 100%;
+    background-position: center;
   }
 
   .title__bw__odonto {

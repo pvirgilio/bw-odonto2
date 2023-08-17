@@ -1,5 +1,4 @@
 .localization__bw {
-  margin-top: 3rem;
   position: relative;
 }
 
@@ -10,7 +9,7 @@
   padding: 1.2rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
   position: absolute;
   left: 15%;
 }
@@ -18,12 +17,16 @@
 .text__localization {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
 
 .hours__bw {
   display: flex;
   justify-content: space-around;
+}
+
+.hours__bw span {
+  font-weight: bold;
 }
 .hours__bw span,
 .hours__bw p {
@@ -46,4 +49,19 @@
   flex-direction: column;
   margin: 0 auto;
   gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .info__localization {
+    position: static;
+    width: 100%;
+  }
+
+  .text__localization h3 {
+    text-align: center;
+  }
+
+  .contact__localization h3 {
+    text-align: center;
+  }
 }

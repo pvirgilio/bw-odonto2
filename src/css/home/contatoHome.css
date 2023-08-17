@@ -1,0 +1,69 @@
+.contato-home {
+  width: 100%;
+  display: flex;
+  padding: 8rem 8rem;
+  background-color: #f1f1f1;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-contato-home {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title-contato-home {
+  font-size: 2.5rem;
+  color: var(--cor--principal);
+}
+
+.p-contato-home {
+  width: 100%;
+  line-height: 30px;
+}
+
+.img-contato-home {
+  width: 50%;
+}
+
+.btn-contato-home {
+  padding: 15px;
+  border: none;
+  background-color: var(--cor--principal);
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .text-contato-home {
+    gap: 20px;
+  }
+
+  .contato-home {
+    padding: 8rem 3rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .contato-home {
+    flex-wrap: wrap-reverse;
+    padding: 8rem 1.3rem;
+  }
+
+  .text-contato-home {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .title-contato-home {
+    font-size: 2rem;
+  }
+
+  .img-contato-home {
+    width: 100%;
+  }
+}

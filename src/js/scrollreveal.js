@@ -4,8 +4,6 @@ setTimeout(() => {
   sr.reveal("header", { duration: 3000 });
   sr.reveal(".card__odonto", { duration: 3000 });
   sr.reveal(".title__bw__odonto", {
-    origin: "right",
-    distance: "100px",
     duration: 2000,
     easing: "ease-in-out",
   });
@@ -24,7 +22,6 @@ setTimeout(() => {
   //O que fazemos
   sr.reveal(".title__oque__fazemos", {
     origin: "right",
-    distance: "100px",
     duration: 1000,
     easing: "ease-in-out",
   });
@@ -51,4 +48,6 @@ setTimeout(() => {
   sr.reveal(".number__avaliation:nth-child(2)", { duration: 4000 });
   sr.reveal(".number__avaliation:nth-child(3)", { duration: 5000 });
   sr.reveal(".number__avaliation:nth-child(4)", { duration: 5000 });
+
+  //news
 }, 3000);
