@@ -1,25 +1,26 @@
-const noticiaSection = document.querySelector('.noticias__container');
-const asideSection = document.querySelector('.aside__post');
-const btnPaginacaoSection = document.querySelector('.noticias__navegacao--numero');
+const noticiaSection = document.querySelector(".noticias__container");
+const asideSection = document.querySelector(".aside__post");
+const btnPaginacaoSection = document.querySelector(
+  ".noticias__navegacao--numero"
+);
 var noticias = [];
 var objetoApiClicado;
 // var idNoticia;
 
-
 console.log(objetoApiClicado);
-
 
 console.log(noticiaSection);
 console.log(asideSection);
 
 verificaApi(0);
 noticiasRecentesApi();
-    
 
 function verificaApi(numeroPagina) {
-  console.log(numeroPagina)
+  console.log(numeroPagina);
 
-  fetch(`https://api-kwi5.onrender.com/v1/api/noticias/list?page=${numeroPagina}`)
+  fetch(
+    `https://api-kwi5.onrender.com/v1/api/noticias/list?page=${numeroPagina}`
+  )
     .then((response) => response.json())
     .then((data) => {
       noticias = data.response;
@@ -29,7 +30,7 @@ function verificaApi(numeroPagina) {
       exibirNoticias(noticias, numeroPagina);
       // exibirNoticiasAside(noticias);
       exibirBtnPaginacao(data.total_paginas);
-      clickbtn()
+      clickbtn();
       // openNoticias(noticias);
       let paginaAtual = numeroPagina;
       console.log(paginaAtual);
@@ -40,19 +41,19 @@ function verificaApi(numeroPagina) {
 }
 
 export async function noticiasRecentesApi() {
-  const conexao = await fetch('https://api-kwi5.onrender.com/v1/api/noticias');
+  const conexao = await fetch("https://api-kwi5.onrender.com/v1/api/noticias");
+  const numeroPagina = 1;
   const conexaoConvertida = await conexao.json();
   console.log(conexaoConvertida);
-  exibirNoticiasAside(conexaoConvertida.response);
+  exibirNoticiasAside(conexaoConvertida.response, numeroPagina);
 }
 
-
-function exibirNoticias(noticias, numeroPagina) {   
+function exibirNoticias(noticias, numeroPagina) {
   noticiaSection.innerHTML = "";
-    noticias.forEach(elemento => {
-        console.log(elemento.id);
-        const data = converteData(elemento);
-        noticiaSection.innerHTML += `<div class="noticias__cards">
+  noticias.forEach((elemento) => {
+    console.log(elemento.id);
+    const data = converteData(elemento);
+    noticiaSection.innerHTML += `<div class="noticias__cards">
         <a href="/pages/noticias-postagem.html?id=${elemento.id}&page=${numeroPagina}" data-id="${elemento.id}" class="img__noticias--container">
           <img src="data:image/png;base64,${elemento.file}" alt="Dentistas fazendo um tratamento bucal em uma paciente" class="img__noticias--cards">
         </a>
@@ -69,13 +70,13 @@ function exibirNoticias(noticias, numeroPagina) {
             <p class="conteudo__info--texto">${elemento.descricao}</p>
           </div>
           <a href="/pages/noticias-postagem.html?id=${elemento.id}&page=${numeroPagina}" data-id="${elemento.id}"  class="noticias__btn">Continue lendo</a>
-        </div>`
-    });
+        </div>`;
+  });
 }
 
 export function converteData(elemento) {
   const dataApi = elemento.pub_date;
-  const data = dataApi.split('T')[0];
+  const data = dataApi.split("T")[0];
   return data;
 }
 
@@ -90,31 +91,31 @@ function exibirBtnPaginacao(numeroDePaginas) {
 }
 
 function clickbtn() {
-  const btnPage = document.querySelectorAll('[data-pag]');
-  console.log(btnPage)
-  btnPage.forEach(e => {
-    e.addEventListener("click", event => {
+  const btnPage = document.querySelectorAll("[data-pag]");
+  console.log(btnPage);
+  btnPage.forEach((e) => {
+    e.addEventListener("click", (event) => {
       event.preventDefault();
       console.log(e);
-      let idbtn = e.getAttribute('data-pag');
+      let idbtn = e.getAttribute("data-pag");
       console.log(idbtn);
-      verificaApi(idbtn)
-      return idbtn
-      })});
-}; 
+      verificaApi(idbtn);
+      return idbtn;
+    });
+  });
+}
 
-
-export function exibirNoticiasAside(noticias) {
+export function exibirNoticiasAside(noticias, pagina) {
   asideSection.innerHTML = "";
-    for(let i = 0; i < 3 ; i++) {
-        asideSection.innerHTML += `
+  for (let i = 0; i < 3; i++) {
+    asideSection.innerHTML += `
         <div class="aside__post--card">
-              <a href="/pages/noticias-postagem.html?id=${noticias[i].id}" data-id="${noticias[i].id}" class="post__card--imgcontainer">
+              <a href="/pages/noticias-postagem.html?id=${noticias[i].id}&page=${pagina}" data-id="${noticias[i].id}" class="post__card--imgcontainer">
                 <img src="data:image/png;base64,${noticias[i].file}" alt="Dentista mostrando 4 mitos dos implante dentarios" class="post__card--img">
               </a>
               <span class="post__card--data">Junho 7,2023</span>
-              <a href="/pages/noticias-postagem.html?id=${noticias[i].id}" data-id="${noticias[i].id}" class="post__card--titulo">${noticias[i].titulo}</a>
+              <a href="/pages/noticias-postagem.html?id=${noticias[i].id}&page=${pagina}" data-id="${noticias[i].id}" class="post__card--titulo">${noticias[i].titulo}</a>
             </div>
-        `
-    }
+        `;
+  }
 }

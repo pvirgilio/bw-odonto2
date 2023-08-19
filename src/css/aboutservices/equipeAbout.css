@@ -97,6 +97,10 @@
     gap: 20px;
   }
 
+  .img-equipe-about {
+    background-position: center;
+  }
+
   .image-container {
     width: 100%;
     height: auto;
