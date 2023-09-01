@@ -22,6 +22,9 @@
   padding: 3rem 8rem 5rem 8rem;
   display: flex;
   gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .local-about {

@@ -4,10 +4,7 @@ function importMenuFooter() {
 
   headerMain.innerHTML = `
   <a style="text-decoration: none;" href="/index.html">
-      <div class="logo__header">
-        <img class="logo__bw" src="/img/odontoLogo.png" alt="" />
-        <h1 class="text__logo"><span class="bw__text">BW</span> odonto</h1>
-      </div>
+      <h1>Logo Odonto</h1>
   </a>
 <nav class="menu">
   <div onclick="menuHeader()" class="container-btn-menu">
@@ -40,10 +37,10 @@ function importMenuFooter() {
   footerMain.innerHTML = `
   <section class="footer__container">
     <section class="footer__informacoes--container">
-      <h3 class="footer__informacoes--titulo"><span class="bw--span">bw</span> odonto</h3>
+      <h3 class="footer__informacoes--titulo"><span class="bw--span"></span>Odonto</h3>
       <address class="informacoes__endereco--container">
-        <p class="informacoes__endereco"> Av. Industrial Gil Martins, N° 2345 - Cidade Nova, Teresina - PI.</p>
-        <p class="informacoes__endereco--tel">Contato: (86)99816-3833</p>
+        <p class="informacoes__endereco"> Lorem sahdgabsid sadasdkasjb a dasdas </p>
+        <p class="informacoes__endereco--tel">Contato: (00)00000-0000</p>
       </address>
       <div class="footer__informacoes--redes">
         <ul class="informacoes__redes--lista">

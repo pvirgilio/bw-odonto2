@@ -7,6 +7,10 @@ header {
   width: 100%;
 }
 
+header a {
+  color: var(--cor--secundaria);
+}
+
 .logo__header {
   display: flex;
   align-items: center;
