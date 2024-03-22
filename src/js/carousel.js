@@ -1,5 +1,5 @@
 function carousel() {
-  fetch("https://api-kwi5.onrender.com/v1/api/noticias")
+  fetch("https://bwodonto.onrender.com/v1/api/noticias")
     .then((response) => response.json())
     .then((data) => {
       const carousel = document.getElementById("myCarousel");

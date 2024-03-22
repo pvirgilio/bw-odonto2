@@ -4,60 +4,54 @@
 //     return urlParams.get(parametro);
 // }
 // const parametroValor = obterParametroDaURL('id');
-//   console.log(parametroValor); 
-
-
+//   console.log(parametroValor);
 
 // Usando localStorage
 
-import { noticiasRecentesApi,converteData } from "./noticias.js";
+import { noticiasRecentesApi, converteData } from "./noticias.js";
 
-    
-  const url = window.location.search;
-  const urlParams = new URLSearchParams(url);
-  const urlId = urlParams.get('id');
-  console.log(urlId);
+const url = window.location.search;
+const urlParams = new URLSearchParams(url);
+const urlId = urlParams.get("id");
+console.log(urlId);
 
+const urlPg = window.location.search;
+const urlPgParams = new URLSearchParams(urlPg);
+const urlPage = urlPgParams.get("page");
+console.log(urlPage);
 
-
-  const urlPg = window.location.search;
-  const urlPgParams = new URLSearchParams(urlPg);
-  const urlPage = urlPgParams.get('page');
-  console.log(urlPage);
-
-async function verificaApi(id,page) {
-    const conexao = await fetch(`https://api-kwi5.onrender.com/v1/api/noticias/list?page=${page}`);
-    const noticiasResponse = await conexao.json();
-    var noticia = noticiasResponse.response;
-    console.log(noticia);
-    const noticiaSelecionada = noticia.find(noticia => noticia.id == id);
-    console.log(noticiaSelecionada);
-    exibirBanner(noticiaSelecionada);
-    exibirNoticias(noticiaSelecionada);
-    noticiasRecentesApi();
+async function verificaApi(id, page) {
+  const conexao = await fetch(
+    `https://bwodonto.onrender.com/v1/api/noticias/list?page=${page}`
+  );
+  const noticiasResponse = await conexao.json();
+  var noticia = noticiasResponse.response;
+  console.log(noticia);
+  const noticiaSelecionada = noticia.find((noticia) => noticia.id == id);
+  console.log(noticiaSelecionada);
+  exibirBanner(noticiaSelecionada);
+  exibirNoticias(noticiaSelecionada);
+  noticiasRecentesApi();
 }
 
-verificaApi(urlId,urlPage);
+verificaApi(urlId, urlPage);
 
+//
 
-
-
-// 
-
-function exibirBanner(noticias) { 
-const bannerSection = document.querySelector('.banner__postagem--container');  
-        const data = converteData(noticias);
-        bannerSection.innerHTML += `
+function exibirBanner(noticias) {
+  const bannerSection = document.querySelector(".banner__postagem--container");
+  const data = converteData(noticias);
+  bannerSection.innerHTML += `
         <div class="banner__postagem--conteudo">
             <h2 class="banner__postagem--titulo">${noticias.titulo}</h2>
             <p class="banner__postagem--data">${data}</p>
         </div>
-        `
-};
+        `;
+}
 
-function exibirNoticias(noticias) {   
-const noticiaSection = document.querySelector('.postagem__container');
-        noticiaSection.innerHTML += `
+function exibirNoticias(noticias) {
+  const noticiaSection = document.querySelector(".postagem__container");
+  noticiaSection.innerHTML += `
         <div class="postagem__container--conteudo">
               <img src="data:image/png;base64,${noticias.file}" alt="Dentista mostrando 4 mitos dos implante dentarios" class="postagem__imagem">
               <p class="postagem__texto">${noticias.conteudo}</p>
@@ -73,9 +67,6 @@ const noticiaSection = document.querySelector('.postagem__container');
                 <li class="tags__item"><a href="#" class="tags__link">Dentista</a></li>
               </ul>
             </div>
-            `
-
-
-};
+            `;
+}
 // verificaId()
-

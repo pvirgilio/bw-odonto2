@@ -19,7 +19,7 @@ function verificaApi(numeroPagina) {
   console.log(numeroPagina);
 
   fetch(
-    `https://api-kwi5.onrender.com/v1/api/noticias/list?page=${numeroPagina}`
+    `https://bwodonto.onrender.com/v1/api/noticias/list?page=${numeroPagina}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -41,7 +41,7 @@ function verificaApi(numeroPagina) {
 }
 
 export async function noticiasRecentesApi() {
-  const conexao = await fetch("https://api-kwi5.onrender.com/v1/api/noticias");
+  const conexao = await fetch("https://bwodonto.onrender.com/v1/api/noticias");
   const numeroPagina = 1;
   const conexaoConvertida = await conexao.json();
   console.log(conexaoConvertida);
